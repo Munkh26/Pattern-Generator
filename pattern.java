@@ -38,8 +38,8 @@ public class pattern {
             output = "";
         }
     }
-    //Pre-condition:
-    //Pos-condition:
+    //Pre-condition: Put an integer in the eo method for the max E you want to print.
+    //Pos-condition: It will print the max E, starting from one "O" then two "EE" until it reaches maxE you want then it goes backwards.
     public static void eo(int maxE) {
         String output = "O";
         String output2 = "EE";
@@ -53,6 +53,24 @@ public class pattern {
                 output2 += "EE";
             }
         }
+        int fullLength = output.length(); 
+        int fullLength2 = output2.length();
+        for (int i = 0; i < maxE; i++) {
+            if (i % 2 == 0) {
+                output = output.substring(0, fullLength - i - 2);
+                System.out.println(output);
+            }
+            else {
+                output2 = output2.substring(0, fullLength2 - (i + 1) - 2);
+                System.out.println(output2);
+            }
+        }
+    }
+
+    //Pre-condition:
+    //Pos-condition:
+    public static void pyramid(int rows) {
+        
     }
 
     //Run tests
