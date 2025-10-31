@@ -1,6 +1,6 @@
 // Class author: Munkhsoyombo Munkhbat
 // Date created: 10/29/2025
-// General description: 
+// General description: User will input intgers into the methods and it will print what the method will do according to the inputted intger.
 
 public class pattern {
     //Pre-condition: Call the method stars by putting an integer for the rows you want.
