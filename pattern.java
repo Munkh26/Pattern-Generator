@@ -70,7 +70,8 @@ public class pattern {
     //Pre-condition:
     //Pos-condition:
     public static void pyramid(int rows) {
-        
+        int num = rows * 2 + 1;
+        String copy = "1";
     }
 
     //Run tests
@@ -79,5 +80,6 @@ public class pattern {
         triangle(9);
         odds(9);
         eo(6);
+        pyramid(5);
     }
 }
