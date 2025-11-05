@@ -95,11 +95,20 @@ public class pattern {
         }
     }
 
-    //Pre-condition:
-    //Pos-condition:
+    //Pre-condition: 
+    //Pos-condition: 
     public static void pyramid(int rows) {
-        int num = rows * 2 + 1;
-        String copy = "1";
+        int num = rows * 2 - 1;
+        String output = "";
+        for (int i = 0; i < rows; i++) {
+            for (int count = 0; count < num; count++) {
+                int num2 = rows - rows + 1;
+                output += num2;
+            }
+            System.out.println(output);
+            output = "";
+        }
+      
     }
 
     //Run tests
