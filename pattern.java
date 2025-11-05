@@ -39,7 +39,7 @@ public class pattern {
         }
     }
     //Pre-condition: Put an integer in the eo method for the max E you want to print.
-    //Pos-condition: It will print the max E, starting from one "O" then two "EE" until it reaches maxE you want then it goes backwards.
+    //Pos-condition: It will print the max E, starting from one "O" or "E" depending on if it is even or odd number the user inputted. It will increase each letter by two like, increase by "EE" or "OO". So when it prints, it will go back and forth until it reahes maxE, then it goes backwards.
     public static void eo(int maxE) {
         String output = "O";
         String output2 = "EE";
