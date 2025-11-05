@@ -43,26 +43,54 @@ public class pattern {
     public static void eo(int maxE) {
         String output = "O";
         String output2 = "EE";
+        if (maxE % 2 == 1) {
+            output = "E";
+            output2 = "OO";
+        }
         for (int i = 0; i < maxE; i++) {
-            if (i % 2 == 0) {
-                System.out.println(output);
-                output += "OO";
-            } 
+            if (maxE % 2 == 0) {
+                if (i % 2 == 0) {
+                    System.out.println(output);
+                    output += "OO";
+                } 
+                else {
+                    System.out.println(output2);
+                    output2 += "EE";
+                }
+            }
             else {
-                System.out.println(output2);
-                output2 += "EE";
+                if (i % 2 == 0) {
+                    System.out.println(output);
+                    output += "EE";
+                } 
+                else {
+                    System.out.println(output2);
+                    output2 += "OO";
+                }
             }
         }
         int fullLength = output.length(); 
         int fullLength2 = output2.length();
         for (int i = 0; i < maxE; i++) {
-            if (i % 2 == 0) {
-                output = output.substring(0, fullLength - i - 2);
-                System.out.println(output);
+            if (maxE % 2 == 0) {
+                if (i % 2 == 0) {
+                    output = output.substring(0, fullLength - i - 2);
+                    System.out.println(output);
+                }
+                else {
+                    output2 = output2.substring(0, fullLength2 - (i + 1) - 2);
+                    System.out.println(output2);
+                }
             }
             else {
-                output2 = output2.substring(0, fullLength2 - (i + 1) - 2);
-                System.out.println(output2);
+                if (i % 2 == 1) {
+                    output = output.substring(0, fullLength - (i + 1) - 2);
+                    System.out.println(output);
+                }
+                else {
+                    output2 = output2.substring(0, fullLength2 - i - 2);
+                    System.out.println(output2);
+                }
             }
         }
     }
