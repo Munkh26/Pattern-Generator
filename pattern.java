@@ -17,6 +17,7 @@ public class pattern {
     //Pre-condition: Call the method triangle by putting an integer for the rows you want.
     //Pos-condition: It will print starting from "1" then depending on the row, all the numbers will change into the row number. Also, it will add one number, that is same as the row number. 
     public static void triangle(int rows) {
+        System.out.println("");
         int i = 1;
         String output = "1";
         while (i <= rows) {
@@ -29,6 +30,7 @@ public class pattern {
     //Pre-condition: Call the method odd and enter an odd integer in it (so it gives odd outputs).
     //Pos-condition: It will print from the number you entered and repeat iteslf that many times. Goes down by 2 each time, so only odd numbers will show.
     public static void odds(int start) {
+        System.out.println("");
         String output = "";
         for (int i = start; i > 0; i -=2) {
             for (int count = 0; count < i; count++) {
@@ -41,6 +43,7 @@ public class pattern {
     //Pre-condition: Put an integer in the eo method for the max E you want to print.
     //Pos-condition: It will print the max E, starting from one "O" or "E" depending on if it is even or odd number the user inputted. It will increase each letter by two like, increase by "EE" or "OO". So when it prints, it will go back and forth until it reahes maxE, then it goes backwards.
     public static void eo(int maxE) {
+        System.out.println("");
         String output = "O";
         String output2 = "EE";
         if (maxE % 2 == 1) {
