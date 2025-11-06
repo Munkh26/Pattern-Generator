@@ -95,20 +95,22 @@ public class pattern {
         }
     }
 
-    //Pre-condition: 
-    //Pos-condition: 
+    //Pre-condition: Put a integer in the pyramid method.
+    //Pos-condition: It will print start printing from "1" and amount of "1" that will be printed is depended on user input. It will add a space in front each line as it goes downward until it reaches only one user inputted integer.
     public static void pyramid(int rows) {
         int num = rows * 2 - 1;
         String output = "";
         for (int i = 0; i < rows; i++) {
-            for (int count = 0; count < num; count++) {
-                int num2 = rows - rows + 1;
+            for (int tempCount = 0; tempCount < i; tempCount++) {
+                output += " ";
+            }
+            for (int count = 0; count < (num - i * 2); count++) {
+                int num2 = i + 1;
                 output += num2;
             }
             System.out.println(output);
             output = "";
         }
-      
     }
 
     //Run tests
