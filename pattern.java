@@ -15,7 +15,7 @@ public class pattern {
         }
     }
     //Pre-condition: Call the method triangle by putting an integer for the rows you want.
-    //Pos-condition: It will print starting from "1" then depending on the row, all the numbers will change into the row number. Also, it will add one number, that is same as the row number. 
+    //Post-condition: It will print starting from "1" then depending on the row, all the numbers will change into the row number. Also, it will add one number, that is same as the row number. 
     public static void triangle(int rows) {
         System.out.println("");
         int i = 1;
@@ -28,7 +28,7 @@ public class pattern {
         }
     }
     //Pre-condition: Call the method odd and enter an odd integer in it (so it gives odd outputs).
-    //Pos-condition: It will print from the number you entered and repeat iteslf that many times. Goes down by 2 each time, so only odd numbers will show.
+    //Post-condition: It will print from the number you entered and repeat iteslf that many times. Goes down by 2 each time, so only odd numbers will show.
     public static void odds(int start) {
         System.out.println("");
         String output = "";
@@ -41,7 +41,7 @@ public class pattern {
         }
     }
     //Pre-condition: Put an integer in the eo method for the max E you want to print.
-    //Pos-condition: It will print the max E, starting from one "O" or "E" depending on if it is even or odd number the user inputted. It will increase each letter by two like, increase by "EE" or "OO". So when it prints, it will go back and forth until it reahes maxE, then it goes backwards.
+    //Post-condition: It will print the max E, starting from one "O" or "E" depending on if it is even or odd number the user inputted. It will increase each letter by two like, increase by "EE" or "OO". So when it prints, it will go back and forth until it reahes maxE, then it goes backwards.
     public static void eo(int maxE) {
         System.out.println("");
         String output = "O";
@@ -99,7 +99,7 @@ public class pattern {
     }
 
     //Pre-condition: Put a integer in the pyramid method.
-    //Pos-condition: It will print start printing from "1" and amount of "1" that will be printed is depended on user input. It will add a space in front each line as it goes downward until it reaches only one user inputted integer.
+    //Post-condition: It will print start printing from "1" and amount of "1" that will be printed is depended on user input. It will add a space in front each line as it goes downward until it reaches only one user inputted integer.
     public static void pyramid(int rows) {
         int num = rows * 2 - 1;
         String output = "";
