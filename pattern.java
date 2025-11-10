@@ -19,14 +19,18 @@ public class pattern {
     public static void triangle(int rows) {
         System.out.println("");
         int i = 1;
-        String output = "1";
         while (i <= rows) {
-            output = output.replaceAll(output.substring(0, 1), "" + i);
+            String output = "";
+            int count = 0;
+            while (count < i) {
+                output += i;
+                count++;
+            }
             System.out.println(output);
-            output += output.substring(0, 1);
             i++;
         }
     }
+
     //Pre-condition: Call the method odd and enter an odd integer in it (so it gives odd outputs).
     //Post-condition: It will print from the number you entered and repeat iteslf that many times. Goes down by 2 each time, so only odd numbers will show.
     public static void odds(int start) {
@@ -119,7 +123,7 @@ public class pattern {
     //Run tests
     public static void main(String[] args) {
         stars(7);   
-        triangle(9);
+        triangle(15);
         odds(9);
         eo(6);
         pyramid(5);
